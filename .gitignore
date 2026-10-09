@@ -1,0 +1,17 @@
+# Secrets and local data: never commit
+.env
+.env.*
+!.env.example
+db.sqlite3
+*.sqlite3
+*.db
+
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# OS
+.DS_Store
