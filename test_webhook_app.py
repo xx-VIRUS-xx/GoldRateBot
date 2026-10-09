@@ -6,7 +6,7 @@ app = FastAPI()
 
 TOKEN = os.getenv("WHATSAPP_TOKEN")
 PHONE_NUMBER_ID = os.getenv("PHONE_NUMBER_ID")
-VERIFY_TOKEN = "goldrate123"
+VERIFY_TOKEN = os.getenv("WHATSAPP_VERIFY_TOKEN", "goldrate123")
 @app.get("/")
 async def root_verify(request: Request):
     params = request.query_params
