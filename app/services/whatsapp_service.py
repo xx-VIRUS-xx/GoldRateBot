@@ -4,9 +4,6 @@ import requests
 TOKEN = os.getenv("WHATSAPP_TOKEN")
 PHONE_NUMBER_ID = os.getenv("PHONE_NUMBER_ID")
 
-print("🚨 TOKEN:", os.getenv("WHATSAPP_TOKEN"))
-print("🚨 PHONE_NUMBER_ID:", os.getenv("PHONE_NUMBER_ID"))
-
 print("🔥🔥 WHATSAPP SERVICE LOADED 🔥🔥")
 def send_template_message(to, message):
     url = f"https://graph.facebook.com/v22.0/{PHONE_NUMBER_ID}/messages"
